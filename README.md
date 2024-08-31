@@ -58,3 +58,13 @@ then go to MainActivity.java file
 import org.devio.rn.splashscreen.SplashScreen; // after facebook library installed or check old app how this import
   SplashScreen.show(this); //add this line
     return "TypescriptProject"; // instead of TypescriptProject this is your app name
+
+if app is now and mainactivity.kt file exist then I am giving you some update
+import android.os.Bundle 
+import org.devio.rn.splashscreen.SplashScreen 
+
+add this function after this line of code override fun getMainComponentName(): String = "TrueWallet"
+override fun onCreate(savedInstanceState: Bundle?) {  // Correctly use Bundle
+        SplashScreen.show(this)  // Show the splash screen
+        super.onCreate(savedInstanceState)  // Ensure this call is made after showing the splash screen
+    }
